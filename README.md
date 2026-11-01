@@ -18,7 +18,7 @@ app that evaluates any uploaded test CSV **without re-training**.
 Because a missed cancer (false negative) is costlier than a false alarm, Recall for the malignant class is
 read alongside the overall metrics when choosing a winner.
 
-## b. Dataset description  [1 mark]
+## b. Dataset description
 
 | Item | Value |
 |---|---|
@@ -51,14 +51,14 @@ concave points, symmetry and fractal dimension.
 | Naive Bayes | `GaussianNB` (defaults) |
 | Support Vector Machine | RBF kernel, `C=2.0`, `gamma="scale"` (AUC from `decision_function`) |
 
-## c. GitHub repository link  [1 mark]
+## c. GitHub repository link
 
 **GitHub:** https://github.com/2026aj05069/ML_assignment_2
 
 **Live Streamlit app:** https://ml-assignment2-2026aj05069.streamlit.app
 
 ```
-bc-diagnosis-classifier/
+ML_assignment_2/
 │-- app.py                 Streamlit application
 │-- train_models.py        Trains the 5 models, writes metrics, saves artifacts
 │-- requirements.txt
@@ -82,7 +82,7 @@ python train_models.py        # optional: regenerates models, metrics and test_d
 streamlit run app.py
 ```
 
-## d. Models used  [5 marks]
+## d. Models used
 
 Metrics on the 114-row hold-out test set (positive class = malignant):
 
@@ -104,7 +104,7 @@ Confusion-matrix counts behind these numbers:
 | Naive Bayes | 69 | 3 | 2 | 40 |
 | Support Vector Machine | 70 | 2 | 0 | 42 |
 
-### Observations on model performance  [3 marks]
+### Observations on model performance
 
 | ML Model Name | Observation about model performance |
 |---|---|
@@ -126,7 +126,7 @@ Confusion-matrix counts behind these numbers:
 | Results of all models | Tab *Compare all 5 models* (table + bar chart + CSV download) |
 
 The uploaded CSV must contain the 30 feature columns of `full_dataset.csv` and the `diagnosis` column
-(`1` = malignant, `0` = benign; `M`/`B` also accepted). The app only calls `predict` /
+(`1` = malignant, `0` = benign; `M`/`B` or `Malignant`/`Benign` also accepted). The app only calls `predict` /
 `predict_proba` / `decision_function` on the stored models - nothing is re-fitted.
 
 ## Notes on reproducibility

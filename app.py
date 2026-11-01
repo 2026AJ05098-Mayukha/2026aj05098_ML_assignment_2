@@ -75,7 +75,7 @@ def prepare_upload(df, features):
                      + (" ..." if len(extra) > 6 else ""))
 
     y = df[TARGET]
-    if y.dtype == object:  # accept M / B (or Malignant / Benign) labels
+    if not pd.api.types.is_numeric_dtype(y):  # accept M / B (or Malignant / Benign) labels
         y = y.astype(str).str.strip().str.upper().str[0].map({"M": 1, "B": 0})
     df[TARGET] = pd.to_numeric(y, errors="coerce")
     for f in features:
