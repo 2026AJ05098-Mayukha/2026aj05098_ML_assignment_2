@@ -53,9 +53,9 @@ concave points, symmetry and fractal dimension.
 
 ## c. GitHub repository link  [1 mark]
 
-**GitHub:** "https://github.com/2026aj05069/ML_assignment_2.git"
+**GitHub:** https://github.com/2026aj05069/ML_assignment_2
 
-**Live Streamlit app:** `https://<your-app-name>.streamlit.app`  ← *replace after deployment*
+**Live Streamlit app:** https://ml-assignment2-2026aj05069.streamlit.app
 
 ```
 bc-diagnosis-classifier/
