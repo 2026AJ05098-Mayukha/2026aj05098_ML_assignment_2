@@ -53,7 +53,7 @@ concave points, symmetry and fractal dimension.
 
 ## c. GitHub repository link  [1 mark]
 
-**GitHub:** `https://github.com/<your-username>/<your-repo-name>`  ← *replace with your repo URL*
+**GitHub:** "https://github.com/2026aj05069/ML_assignment_2.git"
 
 **Live Streamlit app:** `https://<your-app-name>.streamlit.app`  ← *replace after deployment*
 
